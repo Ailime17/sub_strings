@@ -1,6 +1,7 @@
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 def substrings(string, substrings_list)
-    string = string.downcase.split("!").join.split("?").join.split(".").join.split(" ")
+    delimeters = ["!", "?", ".", " "]
+    string = string.downcase.split(Regexp.union(delimeters))
   
     the_hash = Hash.new(0)
 
